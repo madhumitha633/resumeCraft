@@ -1,0 +1,287 @@
+
+.certificate-content {
+    padding: 10px 0;
+}
+
+.eyebrow {
+    color: #ff6b61;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.certificate-content > h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #777d8a;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin: 25px 0 16px;
+}
+
+.language-heading {
+    margin-top: 35px;
+}
+
+.certificate-card,
+.language-card {
+    background: #fff;
+    border: 1px solid #eee2de;
+    border-radius: 12px;
+    padding: 21px;
+    margin-bottom: 16px;
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.item-header h3 {
+    font-size: 15px;
+}
+
+.remove-btn {
+    padding: 8px 11px;
+    color: #e9574d;
+    background: #fff0ec;
+    border: 1px solid #ffd5cf;
+    border-radius: 7px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.field-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px 14px;
+}
+
+.field {
+    min-width: 0;
+    margin-bottom: 2px;
+}
+
+.field.full-width {
+    grid-column: 1 / -1;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    color: #252933;
+    background: #fff8f5;
+    border: 1px solid #eee2de;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+}
+
+.field textarea {
+    min-height: 75px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #ff6b61;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 14px;
+    color: #e9574d;
+    background: #fff;
+    border: 1px dashed #ff6b61;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #fff0ec;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #eee2de;
+}
+
+.save-btn,
+.next-btn {
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-btn {
+    color: #e9574d;
+    background: #fff0ec;
+    border: 1px solid #ff6b61;
+}
+
+.next-btn {
+    color: white;
+    background: #ff6b61;
+    border: 1px solid #ff6b61;
+}
+
+.save-message {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #238557;
+}
+
+@media (max-width: 600px) {
+    .field-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .field.full-width {
+        grid-column: auto;
+    }
+
+    .certificate-card,
+    .language-card {
+        padding: 16px;
+    }
+}
+
+.entry-card {
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border: 1px solid #eee2de;
+    border-radius: 12px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin: 28px 0 15px;
+}
+
+.field {
+    margin-bottom: 17px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eee2de;
+    border-radius: 8px;
+    background: #fff8f5;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #ff6b61;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px dashed #ff6b61;
+    border-radius: 9px;
+    background: #fff0ec;
+    color: #e9574d;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #ffe1da;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee2de;
+}
+
+.save-btn,
+.next-btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: #fff0ec;
+    color: #e9574d;
+    border: 1px solid #ff6b61;
+}
+
+.next-btn {
+    background: #ff6b61;
+    color: #fff;
+    border: 1px solid #ff6b61;
+}
+
+.save-message {
+    margin-top: 12px;
+    color: #238557;
+    font-size: 12px;
+}
+
+.remove-entry-btn {
+    margin-bottom: 15px;
+    padding: 7px 12px;
+    background: #fff0ec;
+    color: #e9574d;
+    border: 1px solid #ffd5cf;
+    border-radius: 7px;
+    cursor: pointer;
+}

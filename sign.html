@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In | ResumeCraft</title>
+
+    <link rel="stylesheet" href="sign.css">
+
+    <script src="theme.js"></script>
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <!-- Left Side -->
+        <section class="auth-left">
+            <a href="index.html" class="logo">
+                Resume<span>Craft</span>
+            </a>
+
+            <div class="left-content">
+                <p class="eyebrow">YOUR CAREER STARTS HERE</p>
+
+                <h1>
+                    Build a resume<br>
+                    that opens doors.
+                </h1>
+
+                <p class="left-description">
+                    Create a professional resume, showcase your skills,
+                    and take the next step in your career with ResumeCraft.
+                </p>
+
+                <div class="benefits">
+                    <div>✓ Easy-to-use resume builder</div>
+                    <div>✓ Professional resume templates</div>
+                    <div>✓ Save and edit your resume anytime</div>
+                </div>
+            </div>
+
+            <p class="left-footer">
+                © 2026 ResumeCraft. All rights reserved.
+            </p>
+        </section>
+
+
+        <!-- Right Side -->
+        <section class="auth-right">
+
+            <div class="auth-card">
+
+                <a href="index.html" class="mobile-logo">
+                    Resume<span>Craft</span>
+                </a>
+
+                <!-- Form Switch -->
+                <div class="auth-switch">
+                    <button
+                        type="button"
+                        class="switch-btn active"
+                        id="signinTab">
+                        Sign In
+                    </button>
+
+                    <button
+                        type="button"
+                        class="switch-btn"
+                        id="signupTab">
+                        Create Account
+                    </button>
+                </div>
+
+
+                <!-- Sign In Form -->
+                <form id="signinForm" class="auth-form">
+
+                    <div class="form-heading">
+                        <h2>Welcome back!</h2>
+                        <p>Sign in to continue building your resume.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signinEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="signinEmail"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signinPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="signinPassword"
+                            placeholder="Enter your password"
+                            required>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-label">
+                            <input type="checkbox" id="rememberMe">
+                            Remember me
+                        </label>
+
+                        <a href="#" id="forgotPassword">
+                            Forgot password?
+                        </a>
+                    </div>
+
+                    <button type="submit" class="auth-submit">
+                        Sign In
+                    </button>
+
+                    <p class="form-message" id="signinMessage"></p>
+
+                    <p class="form-bottom">
+                        Don't have an account?
+                        <button type="button" id="showSignup">
+                            Create Account
+                        </button>
+                    </p>
+
+                </form>
+
+
+                <!-- Create Account Form -->
+                <form id="signupForm" class="auth-form" hidden>
+
+                    <div class="form-heading">
+                        <h2>Create your account</h2>
+                        <p>Start creating your professional resume today.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="signupName"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="signupEmail"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Create a password"
+                            minlength="6"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            minlength="6"
+                            required>
+                    </div>
+
+                    <button type="submit" class="auth-submit">
+                        Create Account
+                    </button>
+
+                    <p class="form-message" id="signupMessage"></p>
+
+                    <p class="form-bottom">
+                        Already have an account?
+                        <button type="button" id="showSignin">
+                            Sign In
+                        </button>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="sign.js"></script>
+
+</body>
+</html>

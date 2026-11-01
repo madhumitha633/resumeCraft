@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates & Preview | ResumeCraft</title>
+
+<script src="theme.js"></script>
+
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="certificate.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">R</span>
+        <span class="first">Resume</span><span>Craft</span>
+    </a>
+
+    <div class="top-actions">
+        <button id="printBtn" class="outline-btn" type="button">
+            Print / Save PDF
+        </button>
+    </div>
+</header>
+
+<div class="workspace">
+
+    <aside class="steps">
+        <p class="step-label">YOUR RESUME</p>
+        <a href="template.html" class="step">✓ Choose Design</a>
+        <a href="personal.html" class="step">✓ Personal Details</a>
+        <a href="education.html" class="step active">3. Education</a>
+        <a href="experience.html" class="step">4. Experience & Skills</a>
+        <a href="certificate.html" class="step">
+            5. Certificates & Preview
+        </a>
+        <p class="step-note">
+            Your information is saved in this browser as you type.
+        </p>
+    </aside>
+
+    <main class="editor">
+        <div class="certificate-content">
+
+            <p class="eyebrow">STEP 3 OF 5</p>
+            <h1>Education</h1>
+            <p class="subtitle">
+                Add your Education details..
+            </p>
+
+            <h2 class="section-title">Educations</h2>
+            <div id="certificateList"></div>
+
+            <button type="button" id="addCertificateBtn" class="add-btn">
+                + Add Another Education
+            </button>
+
+           
+
+            <div class="form-navigation">
+                <button type="button" id="previewBtn" class="next-btn">
+                    save and next →
+                </button>
+            </div>
+
+            <p id="saveMessage" class="save-message" aria-live="polite"></p>
+
+        </div>
+    </main>
+
+   <aside class="preview-panel">
+    <div class="preview-heading">
+      <h2>Live preview</h2>
+      <span>Updates as you type</span>
+    </div>
+     <article id="resumePaper" class="resume-paper">
+      <header class="resume-header">
+        <img id="resumePhoto" hidden alt="Profile photo">
+        <h1 id="pName">Your Name</h1>
+        <p id="pTitle">Professional Title</p>
+        <p id="pContact">email@example.com · Phone · City</p>
+        <p id="pWebsite"></p>
+      </header>
+
+      <section id="summaryBlock" class="resume-section">
+        <h3 class="section-heading">PROFILE</h3>
+        <p id="pSummary" class="placeholder">Your professional summary will appear here.</p>
+      </section>
+
+      <section id="experienceBlock" class="resume-section">
+        <h3 class="section-heading">WORK EXPERIENCE</h3>
+        <div id="pExperience"></div>
+      </section>
+
+      <section id="educationBlock" class="resume-section">
+        <h3 class="section-heading">EDUCATION</h3>
+        <div id="pEducation"></div>
+      </section>
+
+      <section id="skillsBlock" class="resume-section">
+        <h3 class="section-heading">SKILLS</h3>
+        <ul id="pSkills" class="skill-output">
+             <li>Your skills will appear here.</li>
+        </ul>
+      </section>
+
+      <section id="certificatesBlock" class="resume-section">
+        <h3 class="section-heading">CERTIFICATIONS</h3>
+        <div id="pCertificates"></div>
+      </section>
+
+      <section id="languagesBlock" class="resume-section">
+        <h3 class="section-heading">LANGUAGES</h3>
+        <ul id="pLanguages" class="skill-output"></ul>
+      </section>
+    </article>
+    <p class="preview-tip">Tip: Use Print / Save PDF to export your resume.</p>
+  </aside>
+</div>
+
+<script src="personal.js"></script>
+<script src="education.js"></script>
+</body>
+</html>

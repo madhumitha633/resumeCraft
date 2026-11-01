@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeCraft | Build Your Future</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="theme.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-icon">R</span>
+            Resume<span>Craft</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#templates" class="nav-link">Templates</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <div class="nav-actions">
+           
+<div class="user-account" id="userAccount">
+    <a href="sign.html" class="signin-btn" id="signinLink">
+        Sign In
+    </a>
+
+
+
+    <div class="user-menu" id="userMenu" hidden>
+        <span class="welcome-name">
+            Hi, <strong id="welcomeName">User</strong>
+        </span>
+
+        <button type="button" class="signout-btn" id="signoutBtn">
+            Sign Out
+        </button>
+
+    </div>
+    
+        
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content reveal">
+                <span class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    YOUR NEXT CHAPTER STARTS HERE
+                </span>
+
+                <h1>
+                    Create a Resume<br>
+                    That Gets You <span class="gradient-text">Noticed.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Your skills deserve the spotlight. Create a beautiful,
+                    professional resume that tells your story in minutes.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="Dashbord.html" class="primary-btn">
+                         Build Resume <span>↗</span>
+                    </a>
+                    
+                </div>
+
+                <div class="hero-proof">
+                    <div class="avatar-stack">
+                        <span>A</span>
+                        <span>M</span>
+                        <span>J</span>
+                    </div>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>Made for your next big opportunity</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS RESUME ILLUSTRATION -->
+            <div class="hero-visual reveal">
+                <div class="decor decor-one"></div>
+                <div class="decor decor-two"></div>
+
+                <div class="floating-note note-top">
+                    <span class="note-icon">✦</span>
+                    Made to stand out
+                </div>
+
+                <div class="resume-paper">
+                    <div class="resume-sidebar">
+                        <div class="resume-avatar">JD</div>
+                        <div class="resume-side-line wide"></div>
+                        <div class="resume-side-line"></div>
+
+                        <div class="resume-side-heading">CONTACT</div>
+                        <div class="resume-side-line"></div>
+                        <div class="resume-side-line wide"></div>
+
+                        <div class="resume-side-heading">SKILLS</div>
+                        <div class="resume-side-line wide"></div>
+                        <div class="resume-side-line"></div>
+                        <div class="resume-side-line wide"></div>
+                    </div>
+
+                    <div class="resume-main">
+                        <h3>Jordan Davis</h3>
+                        <p class="resume-role">Digital Marketing Specialist</p>
+
+                        <div class="resume-divider"></div>
+
+                        <h4>PROFILE</h4>
+                        <div class="resume-line"></div>
+                        <div class="resume-line"></div>
+                        <div class="resume-line short"></div>
+
+                        <h4>EXPERIENCE</h4>
+                        <div class="resume-entry">
+                            <span class="resume-bullet"></span>
+                            <div>
+                                <strong>Marketing Executive</strong>
+                                <div class="resume-line"></div>
+                                <div class="resume-line short"></div>
+                            </div>
+                        </div>
+
+                        <div class="resume-entry">
+                            <span class="resume-bullet"></span>
+                            <div>
+                                <strong>Marketing Intern</strong>
+                                <div class="resume-line"></div>
+                                <div class="resume-line short"></div>
+                            </div>
+                        </div>
+
+                        <h4>EDUCATION</h4>
+                        <div class="resume-line"></div>
+                        <div class="resume-line short"></div>
+                    </div>
+                </div>
+
+                <div class="floating-note note-bottom">
+                    <span class="check-icon">✓</span>
+                    Your future looks good
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TEMPLATES SECTION -->
+        <section class="templates-section section" id="templates">
+
+            <div class="section-heading reveal">
+                <span class="eyebrow">FIND YOUR STYLE</span>
+                <h2>Choose a look that <span>feels like you.</span></h2>
+                <p>
+                    Three thoughtfully designed styles. One great first impression.
+                </p>
+            </div>
+
+            <div class="template-grid">
+
+                <!-- PROFESSIONAL TEMPLATE -->
+                <article class="template-card reveal">
+                    <div class="template-preview professional-preview">
+                        <div class="mini-resume professional-resume">
+                            <div class="mini-header dark-header">
+                                <div class="mini-photo">JD</div>
+                                <div>
+                                    <div class="mini-name light-text">Jordan Davis</div>
+                                    <div class="mini-role light-muted">Business Analyst</div>
+                                </div>
+                            </div>
+
+                            <div class="mini-content">
+                                <div class="mini-title">PROFESSIONAL SUMMARY</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line short"></div>
+
+                                <div class="mini-title">WORK EXPERIENCE</div>
+                                <div class="mini-subtitle">Senior Business Analyst</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line"></div>
+
+                                <div class="mini-title">EDUCATION</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line short"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-info">
+                        <div>
+                            <h3>Professional</h3>
+                            <p>Polished, confident, and ready for corporate roles.</p>
+                        </div>
+                        <span class="template-number">01</span>
+                    </div>
+                    <span class="template-tag">CLASSIC &amp; REFINED</span>
+                </article>
+
+
+                <!-- MINIMAL TEMPLATE -->
+                <article class="template-card reveal">
+                    <div class="template-preview minimal-preview">
+                        <div class="mini-resume minimal-resume">
+                            <div class="minimal-top">
+                                <div class="mini-name">Taylor Morgan</div>
+                                <div class="mini-role">UX DESIGNER</div>
+                                <div class="minimal-rule"></div>
+                            </div>
+
+                            <div class="mini-content">
+                                <div class="mini-title">ABOUT ME</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line short"></div>
+
+                                <div class="mini-title">EXPERIENCE</div>
+                                <div class="mini-subtitle">Product Designer</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line short"></div>
+
+                                <div class="mini-title">EDUCATION</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line short"></div>
+
+                                <div class="minimal-skills">
+                                    <span>Design</span>
+                                    <span>Research</span>
+                                    <span>Strategy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-info">
+                        <div>
+                            <h3>Minimal</h3>
+                            <p>Clean, simple, and focused on what matters.</p>
+                        </div>
+                        <span class="template-number">02</span>
+                    </div>
+                    <span class="template-tag">LESS CLUTTER, MORE IMPACT</span>
+                </article>
+
+
+                <!-- MODERN TEMPLATE -->
+                <article class="template-card reveal">
+                    <div class="template-preview modern-preview">
+                        <div class="mini-resume modern-resume">
+                            <div class="modern-header">
+                                <div class="mini-photo modern-photo">AM</div>
+                                <div>
+                                    <div class="mini-name light-text">Alex Morgan</div>
+                                    <div class="mini-role light-muted">Creative Developer</div>
+                                </div>
+                            </div>
+
+                            <div class="modern-content">
+                                <div class="mini-title">MY PROFILE</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line"></div>
+
+                                <div class="mini-title">EXPERIENCE</div>
+                                <div class="mini-subtitle">Frontend Developer</div>
+                                <div class="mini-line"></div>
+                                <div class="mini-line short"></div>
+
+                                <div class="mini-title">KEY SKILLS</div>
+                                <div class="modern-skills">
+                                    <span></span><span></span><span></span>
+                                </div>
+
+                                <div class="mini-title">EDUCATION</div>
+                                <div class="mini-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-info">
+                        <div>
+                            <h3>Modern</h3>
+                            <p>Fresh, expressive, and built to catch attention.</p>
+                        </div>
+                        <span class="template-number">03</span>
+                    </div>
+                    <span class="template-tag">BOLD &amp; CREATIVE</span>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section section" id="features">
+
+            <div class="section-heading reveal">
+                <span class="eyebrow">MADE FOR YOU</span>
+                <h2>Everything you need.<br><span>Nothing you don't.</span></h2>
+                <p>Less formatting. More focus on your future.</p>
+            </div>
+
+            <div class="features-grid">
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon coral-icon">✦</div>
+                    <h3>Easy to Create</h3>
+                    <p>Build a well-structured resume without the formatting headache.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon peach-icon">▤</div>
+                    <h3>Beautiful Templates</h3>
+                    <p>Choose a style that reflects your personality and career goals.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon lavender-icon">↗</div>
+                    <h3>Make It Yours</h3>
+                    <p>Present your experience, strengths, and achievements your way.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon green-icon">✓</div>
+                    <h3>Ready to Share</h3>
+                    <p>Prepare a polished resume to take your next career step.</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+        <section class="steps-section section" id="how-it-works">
+
+            <div class="section-heading reveal">
+                <span class="eyebrow">SIMPLE BY DESIGN</span>
+                <h2>Your resume in <span>three steps.</span></h2>
+                <p>A smoother way to turn your experience into opportunity.</p>
+            </div>
+
+            <div class="steps-grid">
+
+                <article class="step-card reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-symbol">▤</div>
+                    <h3>Choose a Template</h3>
+                    <p>Start with a professional, minimal, or modern layout.</p>
+                </article>
+
+                <article class="step-card reveal">
+                    <div class="step-number">02</div>
+                    <div class="step-symbol">✎</div>
+                    <h3>Add Your Details</h3>
+                    <p>Bring your education, experience, and skills together.</p>
+                </article>
+
+                <article class="step-card reveal">
+                    <div class="step-number">03</div>
+                    <div class="step-symbol">↗</div>
+                    <h3>Get Career Ready</h3>
+                    <p>Review your resume and prepare it for your next opportunity.</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section section" id="about">
+
+            <div class="about-visual reveal">
+                <div class="about-orb"></div>
+
+                <div class="about-paper">
+                    <span class="about-paper-icon">R</span>
+                    <div class="about-paper-line long"></div>
+                    <div class="about-paper-line"></div>
+                    <div class="about-paper-line short"></div>
+                    <div class="about-paper-heading">YOUR STORY</div>
+                    <div class="about-paper-line long"></div>
+                    <div class="about-paper-line"></div>
+                    <div class="about-paper-line short"></div>
+                    <div class="about-paper-heading">YOUR FUTURE</div>
+                    <div class="about-paper-line long"></div>
+                    <div class="about-paper-line short"></div>
+                </div>
+
+                <div class="about-bubble">Your next chapter ✨</div>
+            </div>
+
+            <div class="about-content reveal">
+                <span class="eyebrow">A LITTLE ABOUT US</span>
+                <h2>Your journey is unique. <span>Your resume should be too.</span></h2>
+                <p>
+                    ResumeCraft makes resume creation feel simple, clear,
+                    and personal. We believe everyone should have the chance
+                    to present their skills with confidence.
+                </p>
+                <p>
+                    Whether you're starting your career or taking your next
+                    big step, we're here to help you put your best story forward.
+                </p>
+                <a href="about.html" class="text-btn">
+                    Discover our story <span>→</span>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="final-cta section reveal">
+            <div>
+                <span class="eyebrow light-eyebrow">YOUR NEXT CHAPTER STARTS NOW</span>
+                <h2>Ready to make your <span>first impression?</span></h2>
+                <p>Your experience matters. Let's make it stand out.</p>
+            </div>
+
+            <a href="signin.html" class="light-btn">
+                Get Started <span>↗</span>
+            </a>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-main">
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">R</span>
+                Resume<span>Craft</span>
+            </a>
+
+            <p>Helping your next opportunity find you.</p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#templates">Templates</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> ResumeCraft. Made for your next chapter.</p>
+            <a href="#home" class="back-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

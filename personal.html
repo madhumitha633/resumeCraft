@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Resume | ResumeCraft</title>
+  <link rel="stylesheet" href="personal.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+ <a href="#home" class="logo">
+            <span class="logo-icon">R</span><span class="first">
+            Resume</span><span>Craft</span>
+        </a>
+  <div class="top-actions">
+    <button id="printBtn" class="outline-btn">Print / Save PDF</button>
+  </div>
+</header>
+
+<div class="workspace">
+  <aside class="steps">
+    <p class="step-label">YOUR RESUME</p>
+    <a href="template.html" class="step">✓ Choose Design</a>
+    <a class="step active" href="personal.html">2. Personal Details</a>
+    <a class="step " href="education.html">3. Education</a>
+    <a class="step" href="experience.html">4. Experience & Skills</a>
+    <a class="step" href="certificate.html">5. Certificates & Preview</a>
+    <p class="step-note">Your information is saved in this browser as you type.</p>
+    </aside>
+
+    <main class="editor">
+    <div class="form-heading">
+      <p class="eyebrow">STEP 2 OF 5</p>
+      <h1>Build your resume</h1>
+      <p>Enter your information. The preview updates instantly.</p>
+  
+
+    <form id="resumeForm">
+      <section class="form-section">
+        <h2>Personal information</h2>
+        <div class="fields two">
+           
+
+          <label>Full name *
+            <input id="fullName" required placeholder="Olivia Sanchez">
+          </label>
+          <label>Professional title
+            <input id="jobTitle" placeholder="Software Developer">
+          </label>
+          <label>Email *
+            <input id="email" type="email" required placeholder="you@example.com">
+          </label>
+          <label>Phone
+            <input id="phone" placeholder="+91 98765 43210">
+          </label>
+          <label>Location
+            <input id="location" placeholder="Chennai, India">
+          </label>
+          <label>Portfolio / LinkedIn
+            <input id="website" placeholder="linkedin.com/in/yourname">
+          </label>
+        </div>
+        <label>Professional summary
+          <textarea id="summary" rows="4" placeholder="Write a short professional introduction..."></textarea>
+        </label>
+
+        <div id="photoSection" class="photo-section">
+          <label>Profile photo (for supported designs)
+            <input type="file" id="photo" accept="image/*">
+          </label>
+          <img id="photoPreview" hidden alt="Selected profile photo">
+          <button id="removePhoto" type="button" class="remove-photo">Remove photo</button>
+        </div>
+      </section>
+      
+<a href="education.html">
+    <button type="button" id="nextBtn" class="next-btn">
+        Save & Next →
+    </button>
+    </a>
+</div>
+
+<p id="saveMessage" class="save-message" aria-live="polite"></p>
+ </main>
+ 
+
+ <aside class="preview-panel">
+    <div class="preview-heading">
+      <h2>Live preview</h2>
+      <span>Updates as you type</span>
+    </div>
+     <article id="resumePaper" class="resume-paper">
+      <header class="resume-header">
+        <img id="resumePhoto" hidden alt="Profile photo">
+        <h1 id="pName">Your Name</h1>
+        <p id="pTitle">Professional Title</p>
+        <p id="pContact">email@example.com · Phone · City</p>
+        <p id="pWebsite"></p>
+      </header>
+
+      <section id="summaryBlock" class="resume-section">
+        <h3 class="section-heading">PROFILE</h3>
+        <p id="pSummary" class="placeholder">Your professional summary will appear here.</p>
+      </section>
+
+      <section id="experienceBlock" class="resume-section">
+        <h3 class="section-heading">WORK EXPERIENCE</h3>
+        <div id="pExperience"></div>
+      </section>
+
+      <section id="educationBlock" class="resume-section">
+        <h3 class="section-heading">EDUCATION</h3>
+        <div id="pEducation"></div>
+      </section>
+
+      <section id="skillsBlock" class="resume-section">
+        <h3 class="section-heading">SKILLS</h3>
+        <ul id="pSkills" class="skill-output">
+             <li>Your skills will appear here.</li>
+        </ul>
+      </section>
+
+      <section id="certificatesBlock" class="resume-section">
+        <h3 class="section-heading">CERTIFICATIONS</h3>
+        <div id="pCertificates"></div>
+      </section>
+
+      <section id="languagesBlock" class="resume-section">
+        <h3 class="section-heading">LANGUAGES</h3>
+        <ul id="pLanguages" class="skill-output"></ul>
+      </section>
+    </article>
+    <p class="preview-tip">Tip: Use Print / Save PDF to export your resume.</p>
+  </aside>
+</div>
+
+<script src="personal.js"></script>
+</body>
+</html>

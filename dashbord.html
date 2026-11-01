@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | ResumeCraft</title>
+
+    <!-- Apply saved theme before displaying the page -->
+
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- LEFT VERTICAL NAVIGATION -->
+    <aside class="sidebar" id="sidebar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">R</span>
+            <span>Resume<span class="coral-text">Craft</span></span>
+        </a>
+
+        <p class="nav-heading">WORKSPACE</p>
+
+        <nav class="navigation">
+            <a href="dashboard.html" class="nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+        
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-user">
+                <div class="avatar" id="sidebarAvatar">U</div>
+                <div class="sidebar-user-info">
+                    <strong id="sidebarName">User</strong>
+                    <span>ResumeCraft Member</span>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-home">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
+    </aside>
+
+    <!-- RIGHT CONTENT AREA -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <button id="menuToggle" class="menu-toggle"
+                    type="button" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="breadcrumb">
+                <span>Workspace</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <strong>Dashboard</strong>
+            </div>
+
+            <div class="topbar-user">
+                <span id="topbarName">Welcome!</span>
+                <div class="avatar small-avatar" id="topbarAvatar">U</div>
+            </div>
+        </header>
+
+        <div class="page-content">
+
+            <!-- WELCOME HERO -->
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="eyebrow">YOUR CAREER JOURNEY STARTS HERE</span>
+
+                    <h1>
+                        Hi, <span id="welcomeName">there</span>!
+                    </h1>
+
+                    <h2>Are you ready to build your dream resume?</h2>
+
+                    <p>
+                        Your next opportunity starts with a great resume.
+                        Create one that shows your skills, experience, and potential.
+                    </p>
+               </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <div class="hero-circle"></div>
+
+                    <div class="resume-illustration">
+                        <div class="illustration-header"></div>
+                        <div class="illustration-title"></div>
+                        <div class="illustration-line"></div>
+                        <div class="illustration-line short"></div>
+                        <div class="illustration-section">EXPERIENCE</div>
+                        <div class="illustration-line"></div>
+                        <div class="illustration-line short"></div>
+                        <div class="illustration-section">EDUCATION</div>
+                        <div class="illustration-line"></div>
+                    </div>
+
+                    <div class="floating-check">
+                        <i class="fa-solid fa-check"></i>
+                        Ready to grow!
+                    </div>
+
+                    <span class="hero-sparkle">✦</span>
+                </div>
+            </section>
+
+
+            <section class="resume-grid" id="resumeGrid">
+
+                
+<div class="resume-options">
+
+    <!-- EXISTING RESUMES -->
+    <a href="my-resume.html" class="resume-option-card">
+        <div class="option-icon existing-icon">
+            <i class="fa-regular fa-file-lines"></i>
+        </div>
+
+        <h3>Existing Resumes</h3>
+        <p id="resumeCount">No resumes yet</p>
+
+        <span class="option-link">
+            View Resumes
+            <i class="fa-solid fa-arrow-right"></i>
+        </span>
+    </a>
+
+    <!-- CREATE NEW RESUME -->
+    <a href="template.html" class="resume-option-card">
+        <div class="option-icon create-icon">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <h3>Create New Resume</h3>
+        <p>Start building your professional resume.</p>
+
+        <span class="option-link">
+            Get Started
+            <i class="fa-solid fa-arrow-right"></i>
+        </span>
+    </a>
+
+</div>
+</section>
+
+
+
+            <footer class="dashboard-footer">
+                <span>© 2026 ResumeCraft</span>
+                <span>Made for your next opportunity <b>♥</b></span>
+            </footer>
+
+        </div>
+    </main>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
+
+

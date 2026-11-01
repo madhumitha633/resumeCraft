@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview | ResumeCraft</title>
+    <link rel="stylesheet" href="resume-preview.css">
+   
+</head>
+<body>
+    <header class="topbar no-print">
+       <a href="#home" class="logo">
+            <span class="logo-icon">R</span><span class="first">
+            Resume</span><span>Craft</span>
+        </a>
+        <a href="dashbord.html" class="back-link">Back to Dashboard</a>
+    </header>
+
+    <main class="page">
+        <div class="page-heading no-print">
+            <div>
+                <h1>Your Resume</h1>
+                <p>Review your details before downloading or saving.</p>
+            </div>
+           
+        </div>
+
+        <div class="actions no-print">
+            <button id="saveResumeBtn" class="primary-btn">Save Resume</button>
+            <button id="downloadBtn" class="secondary-btn">Download PDF</button>
+            <button id="printBtn" class="secondary-btn">Print Resume</button>
+        </div>
+
+        <p id="message" class="message no-print" aria-live="polite"></p>
+
+        <article id="resumePaper" class="resume-paper" data-template="blue-minimal">
+            <div class="resume-top">
+                <img id="resumePhoto" class="resume-photo" alt="Profile photo" hidden>
+
+                <div class="identity">
+                    <h1 id="pName">Your Name</h1>
+                    <h2 id="pTitle"></h2>
+                    <p id="pContact"></p>
+                    <p id="pWebsite"></p>
+                </div>
+            </div>
+
+            <div class="resume-layout">
+                <div class="resume-main">
+                    <section id="summarySection">
+                        <h3>Professional Summary</h3>
+                        <p id="pSummary"></p>
+                    </section>
+
+                    <section id="experienceSection">
+                        <h3>Work Experience</h3>
+                        <div id="pExperience"></div>
+                    </section>
+
+                    <section id="educationSection">
+                        <h3>Education</h3>
+                        <div id="pEducation"></div>
+                    </section>
+
+                    <section id="projectsSection">
+                        <h3>Projects</h3>
+                        <div id="pProjects"></div>
+                    </section>
+                </div>
+
+                <aside class="resume-sidebar">
+                    <section id="skillsSection">
+                        <h3>Skills</h3>
+                        <div id="pSkills"></div>
+                    </section>
+
+                    <section id="certificatesSection">
+                        <h3>Certificates</h3>
+                        <div id="pCertificates"></div>
+                    </section>
+
+                    <section id="languagesSection">
+                        <h3>Languages</h3>
+                        <div id="pLanguages"></div>
+                    </section>
+                </aside>
+            </div>
+        </article>
+    </main>
+
+    <script src="resume-preview.js"></script>
+</body>
+</html>

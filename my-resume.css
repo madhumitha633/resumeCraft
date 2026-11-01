@@ -1,0 +1,75 @@
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 35px;
+            font-family: Arial, sans-serif;
+            background: #fff7f4;
+            color: #292d38;
+        }
+
+        h1 {
+            color: #252933;
+        }
+
+        .resume-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .resume-card {
+            background: white;
+            padding: 22px;
+            border: 1px solid #eee7e4;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px #2529330d;
+        }
+
+        .resume-card h3 {
+            margin-top: 0;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        #button {
+            border: 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            color:white;
+            background-color: #ff6b61;
+        }
+         button {
+            border: 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .open-btn {
+            background: #ff6b61;
+            color: white;
+        }
+
+        .delete-btn {
+            background: #ffe9e6;
+            color: #c03932;
+        }
+
+        .empty {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }

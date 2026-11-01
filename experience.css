@@ -1,0 +1,195 @@
+
+.experience-content {
+    padding: 10px 0;
+}
+
+.eyebrow {
+    color: #ff6b61;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.experience-content > h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.subtitle,
+.section-description {
+    color: #777d8a;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin: 25px 0 16px;
+}
+
+.form-card,
+.experience-card {
+    padding: 22px;
+    background: #fff;
+    border: 1px solid #eee2de;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.experience-card h3,
+.form-card h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.experience-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.field {
+    margin-bottom: 18px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eee2de;
+    border-radius: 8px;
+    background: #fff8f5;
+    color: #252933;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 85px;
+    line-height: 1.6;
+}
+
+.field input:focus,
+.field textarea:focus {
+    border-color: #ff6b61;
+}
+
+.field-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 14px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.date-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.current-job {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #777d8a;
+    margin: 5px 0 18px;
+}
+
+.current-job input {
+    width: auto;
+    accent-color: #ff6b61;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+    background: #fff;
+    border: 1px dashed #ff6b61;
+    border-radius: 9px;
+    color: #e9574d;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #fff0ec;
+}
+
+.remove-btn {
+    background: #fff0ec;
+    color: #e9574d;
+    border: 1px solid #ffd5cf;
+    border-radius: 7px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid #eee2de;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.save-btn,
+.next-btn {
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-btn {
+    color: #e9574d;
+    background: #fff0ec;
+    border: 1px solid #ff6b61;
+}
+
+.next-btn {
+    color: #fff;
+    background: #ff6b61;
+    border: 1px solid #ff6b61;
+}
+
+.save-message {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #238557;
+}
+
+@media (max-width: 600px) {
+    .field-grid,
+    .date-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .form-card,
+    .experience-card {
+        padding: 16px;
+    }
+}
